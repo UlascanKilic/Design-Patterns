@@ -1,2 +1,2 @@
 # Design-Patterns
-uWu ben bi poaçayım uWu
+UwU ben bi poaçayım UwU
