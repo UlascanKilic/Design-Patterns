@@ -1,0 +1,13 @@
+C:\Users\Atanur\source\repos\Design_Patterns\Design_Patterns\bin\Debug\netcoreapp3.1\Design_Patterns.exe
+C:\Users\Atanur\source\repos\Design_Patterns\Design_Patterns\bin\Debug\netcoreapp3.1\Design_Patterns.deps.json
+C:\Users\Atanur\source\repos\Design_Patterns\Design_Patterns\bin\Debug\netcoreapp3.1\Design_Patterns.runtimeconfig.json
+C:\Users\Atanur\source\repos\Design_Patterns\Design_Patterns\bin\Debug\netcoreapp3.1\Design_Patterns.runtimeconfig.dev.json
+C:\Users\Atanur\source\repos\Design_Patterns\Design_Patterns\bin\Debug\netcoreapp3.1\Design_Patterns.dll
+C:\Users\Atanur\source\repos\Design_Patterns\Design_Patterns\bin\Debug\netcoreapp3.1\Design_Patterns.pdb
+C:\Users\Atanur\source\repos\Design_Patterns\Design_Patterns\obj\Debug\netcoreapp3.1\Design_Patterns.csprojAssemblyReference.cache
+C:\Users\Atanur\source\repos\Design_Patterns\Design_Patterns\obj\Debug\netcoreapp3.1\Design_Patterns.AssemblyInfoInputs.cache
+C:\Users\Atanur\source\repos\Design_Patterns\Design_Patterns\obj\Debug\netcoreapp3.1\Design_Patterns.AssemblyInfo.cs
+C:\Users\Atanur\source\repos\Design_Patterns\Design_Patterns\obj\Debug\netcoreapp3.1\Design_Patterns.csproj.CoreCompileInputs.cache
+C:\Users\Atanur\source\repos\Design_Patterns\Design_Patterns\obj\Debug\netcoreapp3.1\Design_Patterns.dll
+C:\Users\Atanur\source\repos\Design_Patterns\Design_Patterns\obj\Debug\netcoreapp3.1\Design_Patterns.pdb
+C:\Users\Atanur\source\repos\Design_Patterns\Design_Patterns\obj\Debug\netcoreapp3.1\Design_Patterns.genruntimeconfig.cache
