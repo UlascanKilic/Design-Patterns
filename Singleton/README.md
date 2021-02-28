@@ -212,7 +212,7 @@ Bakkal amcamızın ekran çıktısına bakalım.
 
 9. Son olarak değineceğimiz iki farklı konu kaldı. Lazy Singleton ve Eager Singleton.
 
-<b>Lazy Singleton:</b> Üretmek istediğimiz nesne sadece ilgili class çağrıldığında üretilir.
+<b>Lazy Singleton:</b> Üretmek istediğimiz nesne sadece ilgili class çağrıldığında üretilir.</br>
 <b>Eager Singleton: </b> Program başlar başlamaz class içerisinde bir nesne üretilir.
 
 Hangisini kullanacağınız sizin kendi senaryonuza göre değişiklik gösterecektir.
