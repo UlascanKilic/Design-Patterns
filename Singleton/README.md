@@ -281,6 +281,6 @@ constructor dışında sadece okuma yetkisi vermek istediğiniz veriler için ku
 #### Kaynakça:
 
 
-https://sourcemaking.com/design_patterns/singleton
+https://sourcemaking.com/design_patterns/singleton <br>
 https://csharpindepth.com/articles/singleton
 
