@@ -26,7 +26,7 @@ Bu tipleri bir veritabanı örneğinde inceleyelim. Bir adet Database Class’ı
 
 1. Ilk olarak bir Database Class’ı oluşturmamız gerekiyor.
 ```csharp
-sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
 {
 
 }
@@ -38,13 +38,13 @@ sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki
 ```csharp
 sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
 {
-    private static Database _instance = null; // null anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+    private static Database _instance = null; // null anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
 }
 ```
 
 3. Sıradaki işlemimiz bu class’ın constructor’ını private yapmak. Bunu yapmamızın sebebi, programımızda global olarak new anahtar kelimesi ile bu class’tan yeni bir nesne üretilmesini engellemek.
 ```csharp
-sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywordsbaşlığında bulabilirsiniz
+sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
 {
     private static Database _instance = null; // null anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
     private Database() { Console.WriteLine("Instance created"); }
