@@ -36,7 +36,7 @@ sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki
 2. Sıradaki işlemimiz ise _instance adını vereceğimiz, programın çalışma süresi boyunca ne olursa olsun sadece bir tane üretilecek olan nesnemizi eklemek.
 
 ```csharp
-sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
 {
     private static Database _instance = null; // null anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
 }
@@ -44,9 +44,9 @@ sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki
 
 3. Sıradaki işlemimiz bu class’ın constructor’ını private yapmak. Bunu yapmamızın sebebi, programımızda global olarak new anahtar kelimesi ile bu class’tan yeni bir nesne üretilmesini engellemek.
 ```csharp
-sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywordsbaşlığında bulabilirsiniz
 {
-    private static Database _instance = null; // null anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+    private static Database _instance = null; // null anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
     private Database() { Console.WriteLine("Instance created"); }
 }
 ```
@@ -59,9 +59,9 @@ Biz bu yazımızda Property ile yapmayı tercih ettik. Sebebi ise tamamen can s�
 
 Şimdi property yöntemini kullanarak implementasyona devam edelim.
 ```csharp
-sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
 {
-    private static Database _instance = null; // null anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+    private static Database _instance = null; // null anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
     private Database() { Console.WriteLine("Instance created"); }
     public static Database Instance
     {
@@ -80,9 +80,9 @@ sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki
 5. Son olarak control amaçlı bir fonksiyon daha oluşturalım.
 
 ```csharp
-sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
 {
-    private static Database _instance = null; // null anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+    private static Database _instance = null; // null anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
     private Database() { Console.WriteLine("Instance created"); }
     public static Database Instance
     {
@@ -127,7 +127,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Parallel.Invoke(() => FirstProccess(), () => SecondProccess());//Parallel.Invoke() anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+        Parallel.Invoke(() => FirstProccess(), () => SecondProccess());//Parallel.Invoke() anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
         Console.ReadLine();
     }
 
@@ -161,17 +161,17 @@ Bu örnekte bakkal amca aynı anda iki kişiye de cevap verdiği için iki kişi
 
 8.Burada Multi thread Singleton yapısı ile tanışıyoruz. Yapı olarak mimarimizde köklü bir değişiklik yapmayacağız. Class’ımıza sadece ufak bir kontrol daha ekleyeceğiz.
 ```csharp
-sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
 {
-    private static Database _instance = null; // null anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
-    private static readonly object threadSafety = new object(); //readonly anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+    private static Database _instance = null; // null anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
+    private static readonly object threadSafety = new object(); //readonly anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
 
     private Database() { Console.WriteLine("Instance created"); }
     public static Database Instance
     {
         get
         {
-            lock (threadSafety) //lock anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+            lock (threadSafety) //lock anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
             {
                 if (_instance == null)
                 {
@@ -220,9 +220,9 @@ Bir nesneyi üretmenin maliyeti bizim için yüksekse ve bu nesne çok nadir kul
 
 #### Lazy Singleton
 ```csharp
-sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
 {
-    private static Database _instance = null; // null anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+    private static Database _instance = null; // null anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
        
     private Database() { Console.WriteLine("Instance created"); }
     public static Database Instance
@@ -242,9 +242,9 @@ _instance ilk olarak null şeklinde tanımlanır ve Property içerisinde null ol
 
 #### Eager Singleton
 ```csharp
-sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
 {
-    private static Database _instance = new Database(); // null anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+    private static Database _instance = new Database(); 
        
     private Database() { Console.WriteLine("Instance created"); }       
     public static Database Instance
