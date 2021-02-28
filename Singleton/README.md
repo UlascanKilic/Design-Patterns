@@ -14,7 +14,7 @@ Ayrıca singletonun design pattern, benzer yapıda işlemleri, her bir işlem i�
 #### Singleton design pattern araştırdıkça karşımıza farklı implementasyon yöntemleri çıkmaktadır.
 
 - Thread kontrolü olmayan en temel Singleton yöntemi
-- MultiThread kontrolü olan Singleton yöntemi
+- Multi Thread kontrolü olan Singleton yöntemi
 
 #### Ayrıca nesne oluşturma yöntemine bağlı olarak iki farklı yönteme ayrılmaktadır
 - Lazy Singleton
@@ -121,7 +121,7 @@ Bu örnekte main içerisinde iki farklı işlem yapılıyor fakat kurduğumuz ya
 
 ![alt text](https://github.com/UlascanKilic/Design-Patterns/blob/main/Singleton/ss1.png)
 
-7. Şimdi konuşmamız gereken bazı durumlar var. Bu implementasyon, single thread bir yapıda düzgün çalışacaktır. Peki ya multithreading bir yapı kullanılacaksa ne yapıcaz? Bu sefer sadece main içerisinde değişiklik yaparak bu oluşturduğumuz Singleton yapısını bir de multithread ile kullanalım. Database class’ını aynı bırakıyorum ve main içerisine şu kodları ekliyorum:
+7. Şimdi konuşmamız gereken bazı durumlar var. Bu implementasyon, single thread bir yapıda düzgün çalışacaktır. Peki ya multi threading bir yapı kullanılacaksa ne yapıcaz? Bu sefer sadece main içerisinde değişiklik yaparak bu oluşturduğumuz Singleton yapısını bir de multi thread ile kullanalım. Database class’ını aynı bırakıyorum ve main içerisine şu kodları ekliyorum:
 ```csharp
 class Program
 {
@@ -143,7 +143,7 @@ class Program
     }
 }
 ```
-Yukarıdaki kodda yaptığımız işlem basitçe bir multithreading oluşturmaktır. Multithread bir işlem yaptığımızda, Database class’ına “T” zamanında “N” adet işlem yapılabilir. Kısacası birden çok iş parçacığının aynı anda farklı kesimlerde çalışabilmesi için bölümlenmesini sağlıyoruz.
+Yukarıdaki kodda yaptığımız işlem basitçe bir multi threading oluşturmaktır. Multi thread bir işlem yaptığımızda, Database class’ına “T” zamanında “N” adet işlem yapılabilir. Kısacası birden çok iş parçacığının aynı anda farklı kesimlerde çalışabilmesi için bölümlenmesini sağlıyoruz.
 
 Burada fark edilmesi gereken sorun ise şu; Aynı anda farklı kesimlerde çalıştırdığımız işlemler yine aynı anda Database class’ından nesne oluşturmaya çalışacaktır ve bizim yazdığımız ilkel Singleton kodu *bumm* diye patlayacaktır. Örnek ekran çıktısını aşağıda inceleyelim.
 
@@ -159,7 +159,7 @@ X kişisi ve Y kişisi bir bakkal amcaya aynı anda soru sorsun.
 
 Bu örnekte bakkal amca aynı anda iki kişiye de cevap verdiği için iki kişiye de farklı kalemler vermiş oluyor. Bizim istediğimiz ise bir adet kalem alıp onu önce X kişisine, sonra da aynı kalemi Y kişisine vermesi. Peki bu problemin önüne nasıl geçebiliriz ?
 
-8.Burada Multithread Singleton yapısı ile tanışıyoruz. Yapı olarak mimarimizde köklü bir değişiklik yapmayacağız. Class’ımıza sadece ufak bir kontrol daha ekleyeceğiz.
+8.Burada Multi thread Singleton yapısı ile tanışıyoruz. Yapı olarak mimarimizde köklü bir değişiklik yapmayacağız. Class’ımıza sadece ufak bir kontrol daha ekleyeceğiz.
 ```csharp
 sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
 {
