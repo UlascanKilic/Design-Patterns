@@ -265,16 +265,16 @@ Multi Thread programlamada Thread’lerin senkronize bir şekilde çalışmasın
 #### Property 
 Program akışı içerisinde her yerden erişilmesini, fütursuzca değiştirilmesini istemediğimiz değişkenlerin class dışarısından güvenli şekilde erişilmesi ve değiştirilmesini istediğimiz durumlarda başvurduğumuz yapılardır.
 
-Bir property iki farklı bloktan oluşur
-Get : değişkenin değerinin dışarıdan okunduğu blok
+Bir property iki farklı bloktan oluşur<br>
+Get : değişkenin değerinin dışarıdan okunduğu blok<br>
 Set : değişkenin değerinin dışarıdan değiştirildiği blok.
 
 #### Parallel.Invoke 
-bir programda oluşma sırası önemli olmadan çoklu işlem yapmanın(Multi Thread) en basit yoludur.
+Bir programda oluşma sırası önemli olmadan çoklu işlem yapmanın(Multi Thread) en basit yoludur.
 
 
 #### Readonly 
-constructor dışında sadece okuma yetkisi vermek istediğiniz veriler için kullanılır. Static bir ifade değildir. Bu yüzden constdan farklıdır.
+Constructor dışında sadece okuma yetkisi vermek istediğiniz veriler için kullanılır. Static bir ifade değildir. Bu yüzden constdan farklıdır.
 
 
 
