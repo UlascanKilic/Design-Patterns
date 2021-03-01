@@ -55,7 +55,7 @@ sealed class Database //sealed anahtar kelimesinin işlevini yazının sonundaki
 - Fonksiyon ile yazmak
 - Property ile yazmak
 
-Biz bu yazımızda Property ile yapmayı tercih ettik. Sebebi ise tamamen can sıkıntısı.//Property anahtar kelimesinin işlevini yazının sonundaki Keywords(buraya link koy) başlığında bulabilirsiniz
+Biz bu yazımızda Property ile yapmayı tercih ettik. Sebebi ise tamamen can sıkıntısı.//Property anahtar kelimesinin işlevini yazının sonundaki Keywords başlığında bulabilirsiniz
 
 Şimdi property yöntemini kullanarak implementasyona devam edelim.
 ```csharp
