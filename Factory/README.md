@@ -49,7 +49,7 @@ OOP’de çok karıştırılan ve yeni başlayanların “hangisini kullanmalıy
   </tr>
 </table>
 
-### Factory Pattern devam
+### Factory Pattern
 Bu iki yapıyı anladıktan sonra Factory Pattern’e geri dönebiliriz. Yukarıda yazdığımız gibi, bizim amacımız sinemaya girip eğlenmek. Filmin perdeye nasıl yansıdığını, hangi açı ile perdeye geldiği vs konularıyla ilgilenmiyoruz. O halde başlayabiliriz.
 
 Bu örneğimiz bir oyun örneği olsun. Mage ve Skeleton olmak üzere iki adet düşman tipimiz, bunları üretecek olan bir tane Spawner(Creator) ve aynı zamanda düşmanlarımızın Shout ve TakeDamage özellikleri olsun.
@@ -182,6 +182,9 @@ static void Main(string[] args)
         }
 
 ```
+
+![alt text](https://github.com/UlascanKilic/Design-Patterns/blob/main/Factory/ss1.png)
+
 ```csharp
 Enemy pitircik = Spawner.SpawnEnemy(70, "Iskelet Abi", 30, 1, Type.Meele);
 ```
@@ -195,7 +198,7 @@ Aynı tipten nesneleri tek bir class üzerinden türetmek ve kontrol etmek.
 #### Örnekler
 Sisteme öğrenci ekleme. Araba üretmek, Bir oyuna düşman yaratmak.
 
-#### çözdüğü problem
+#### Çözdüğü problem
 Üretim sırasındaki oluşan karmaşayı engellemek.
 
 #### Kaynakça 
