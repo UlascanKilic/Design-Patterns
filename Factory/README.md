@@ -15,21 +15,21 @@ OOP’de çok karıştırılan ve yeni başlayanların “hangisini kullanmalıy
     <th>Interface</th>
   </tr>
   <tr>
-    <td class="tg-0pky">New anahtar sözcüğü ile yeni nesne üretilemez</td>
-    <td class="tg-0pky">New anahtar sözcüğü ile yeni nesne üretilemez</td>
+    <td class="tg-0pky">New anahtar sözcüğü ile yeni nesne üretilemez.</td>
+    <td class="tg-0pky">New anahtar sözcüğü ile yeni nesne üretilemez.</td>
   </tr>
   <tr>
-    <td class="tg-0pky">constructor/destructor tanımlanabilir
+    <td class="tg-0pky">constructor/destructor tanımlanabilir.
 </td>
-    <td class="tg-0pky">constructor/destructor tanımlanamaz</td>
+    <td class="tg-0pky">constructor/destructor tanımlanamaz.</td>
   </tr>
   <tr>
-    <td class="tg-0pky">İçerisinde kapsadığı her şey public olmak zorunda değildir</td>
-    <td class="tg-0pky">İçerisinde bulunan her şey public olarak kabul edilir
+    <td class="tg-0pky">İçerisinde kapsadığı her şey public olmak zorunda değildir.</td>
+    <td class="tg-0pky">İçerisinde bulunan her şey public olarak kabul edilir.
 </td>
   </tr>
   <tr>
-    <td class="tg-0pky">İçerisinde abstract methodlar ve normal methodlar bulundurabilir</td>
+    <td class="tg-0pky">İçerisinde abstract methodlar ve normal methodlar bulundurabilir.</td>
     <td class="tg-0pky">İçerisinde sadece method bildirimi yapılabilir.
 </td>
   </tr>
@@ -42,7 +42,7 @@ OOP’de çok karıştırılan ve yeni başlayanların “hangisini kullanmalıy
     <td class="tg-0pky">Bir sınır aynı anda birden fazla Interface miras alabilir.</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Alt classlar ile arasında Is-a ilişkisi vardır
+    <td class="tg-0pky">Alt classlar ile arasında Is-a ilişkisi vardır.
 </td>
     <td class="tg-0pky">Alt classlar ile arasında can-do ilişkisi vardır.
 </td>
@@ -91,7 +91,9 @@ public abstract class Enemy
     }
 ```
 
-Senaryomuzda düşman olan iki tane farklı karakter var ve bu karakterlerin ortak yönü düşman olmasıdır. Bundan dolayı ana class’ımız Enemy olacak. Bu Class içerisinde bütün Enemy’lere ait olacak olan özellikleri yazdık.(Dikkat: Bu class’ı miras alan alt classlar TakeDamage methodunu veya tanımlanmış olan property’leri kullanmak zorunda değiller fakat Shout methodunu override etmek zorundalar çünkü kendisi bir abstract method.)
+Senaryomuzda düşman olan iki tane farklı karakter var ve bu karakterlerin ortak yönü düşman olmasıdır. Bundan dolayı ana class’ımız Enemy olacak. Bu Class içerisinde bütün Enemy’lere ait olacak olan özellikleri yazdık.<br/>
+
+> Dikkat: Bu class’ı miras alan alt classlar TakeDamage methodunu veya tanımlanmış olan property’leri kullanmak zorunda değiller fakat Shout methodunu override etmek zorundalar çünkü kendisi bir abstract method.
 
 2) Şimdi sırada Enemy class’ını miras alacak olan alt class’ları tanımlayalım. Bu senaryoda bir Mage ve bir Skeleton düşman var.
 
@@ -158,11 +160,12 @@ Enum yapısını kullanarak sadece belirlenen spesifik tipler ile çalışmak is
 1) Bana enemy’lerin statlarını ve türünü ver
 2) Switch case ile hangi nesnenin türetileceğine karar ver
 3) Türetilen nesneyi geri döndür.
-Note: Static olmasının sebebi, bu class’ı bir nesne türetmeden kullanmak istememiz. Dönüş tipinin Enemy olmasının sebebi ise, bizim bir Enemy nesnesini bu fonksiyona eşitleyip bir nesne türetmek istememiz.
+
+> Not: Static olmasının sebebi, bu class’ı bir nesne türetmeden kullanmak istememiz. Dönüş tipinin Enemy olmasının sebebi ise, bizim bir Enemy nesnesini bu fonksiyona eşitleyip bir nesne türetmek istememiz.
 
 
 
-4) Son olarak main içerisine bakalım.
+Son olarak main içerisine bakalım.
 
 
 ```csharp
