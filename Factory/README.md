@@ -29,7 +29,7 @@ OOP’de çok karıştırılan ve yeni başlayanların “hangisini kullanmalıy
 </td>
   </tr>
   <tr>
-    <td class="tg-0pky">Teen&amp;<br>İçerisinde abstract methodlar ve normal methodlar bulundurabilir</td>
+    <td class="tg-0pky">İçerisinde abstract methodlar ve normal methodlar bulundurabilir</td>
     <td class="tg-0pky">İçerisinde sadece method bildirimi yapılabilir.
 </td>
   </tr>
